@@ -1,0 +1,6 @@
+plugin/vdet-java/node_modules/*
+plugin/vdet-java/dist/*
+plugin/vdet-java/.vscode/*
+plugin/vdet-java/out/*
+plugin-backend/__pycache__/*
+plugin-backend/assets/*

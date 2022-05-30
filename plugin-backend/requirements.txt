@@ -1,0 +1,4 @@
+Flask
+transformers
+torch
+scikit-learn==1.0.2
