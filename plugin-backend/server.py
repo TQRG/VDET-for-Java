@@ -5,13 +5,18 @@ import torch
 from transformer import getModel, getTokenizer, getMultilabelBinarizer, process_sequence, get_labels
 from utils import clean_code, flatten_list, remove_duplicate_labels
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+p_model = os.getenv("MODEL_PATH")
+p_mlb = os.getenv("BINARIZER_PATH")
+
 app = Flask(__name__)
 
-model = getModel(
-    "C:/Users/claud/Desktop/thesis/code/plugin-backend/assets/best_model.pt")
+model = getModel(p_model)
 tokenizer = getTokenizer()
-mlb = getMultilabelBinarizer(
-    "C:/Users/claud/Desktop/thesis/code/plugin-backend/assets/multilabelbinarizer.pt")
+mlb = getMultilabelBinarizer(p_mlb)
 
 
 @app.route('/predict/section', methods=["POST"])
