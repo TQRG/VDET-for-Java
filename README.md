@@ -8,7 +8,7 @@
 
 
 
-## Features
+## Features 🔎
 - Scan a complete file (recommended)
 - Scan a specific code piece highlighted by the user (useful when there are syntax errors)
 
@@ -20,7 +20,7 @@
 
 Tested with ![Windows](https://svgshare.com/i/ZhY.svg) ![VSCode version](https://badgen.net/badge/VSCode/v1.70/blue) ![Python version](https://badgen.net/badge/Python/v3.10.2/blue) ![NodeJS version](https://badgen.net/badge/NodeJS/v16.15.0/blue) ![Git version](https://badgen.net/badge/Git/v2.35.1.windows.2/blue) 
 
-### 1. Start plugin-backend
+### 1. Start plugin-backend 
 To run plugin-backend server (from dir: `plugin-backend/`):
 
 1. Install required packages (listed at requirements.txt):
@@ -34,14 +34,15 @@ To run plugin-backend server (from dir: `plugin-backend/`):
     python server.py 
     ```
     
-Check the available routes (they can be used without the extension):
-**1. Analyse code section (with line interval):**
-    ```  POST /predict/section ```
+4. Check the available routes (they can be used without the extension):
 
-**2. Analyse complete file:**
-    ```  POST /predict/file ```
+    **1.** Analyse code section (with line interval):
+        ```  POST /predict/section ```
 
-### 2. Start VS Code extension
+    **2.** Analyse complete file:
+        ```  POST /predict/file ```
+
+### 2. Start VS Code extension 💻
 To run the extension (from dir: `plugin/vdet-java/`)
 
 1. Make sure you have Node.js and Git installed
