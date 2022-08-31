@@ -59,11 +59,12 @@ To run the extension (from dir: `plugin/vdet-java/`)
 **Note:** if you have any trouble starting the extension, please check ["VS Code: Your First Extension"](https://code.visualstudio.com/api/get-started/your-first-extension) tutorial.
 
 
+
 ## Datasets
+
 Our datasets are available [here](https://drive.google.com/drive/folders/1FzAR08Ux9qay17b3mnJHswatFPBU6psT?usp=sharing). The datasets were built from a single source, the [Juliet Test Suite for Java](https://samate.nist.gov/SARD/test-suites/111). 
 
 There are three datasets available and suitable for machine learning operations. The split follows an 80/10/10 ratio for train, test and validation sets, respectively.
-
 
 ___
 <br>
