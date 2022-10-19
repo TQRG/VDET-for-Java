@@ -42,6 +42,9 @@ def section():
 
     # Get predictions
     outputs = model(ids=stacked_input_ids, mask=stacked_attn_masks)
+
+    print("soma; ", torch.sum(torch.sigmoid(outputs)))
+
     labels = get_labels(mlb, outputs)
 
     flatten = flatten_list(labels)
@@ -79,6 +82,9 @@ def file():
 
         # Get predictions
         outputs = model(ids=stacked_input_ids, mask=stacked_attn_masks)
+
+        print(outputs)
+
         labels = get_labels(mlb, outputs)
 
         flatten = flatten_list(labels)
