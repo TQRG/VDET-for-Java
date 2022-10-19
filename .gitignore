@@ -5,3 +5,4 @@ plugin/vdet-java/out/*
 plugin-backend/__pycache__/*
 plugin-backend/assets/*
 plugin-backend/.env
+data/crawler/venv
