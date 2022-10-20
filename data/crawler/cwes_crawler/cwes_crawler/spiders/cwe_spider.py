@@ -60,7 +60,7 @@ class CWESpider(scrapy.Spider):
                 res_languages
             ]
 
-            with open('./docs/cwes.csv', 'a') as f:
+            with open('./docs/cwes.csv', 'a') as f: # update path
                 writer = csv.writer(f)
                 writer.writerow(row)
 
