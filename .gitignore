@@ -7,3 +7,4 @@ plugin-backend/assets/*
 plugin-backend/.env
 data/crawler/venv
 data/docs/datasets
+.vscode
